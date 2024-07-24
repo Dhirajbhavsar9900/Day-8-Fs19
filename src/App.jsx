@@ -1,4 +1,6 @@
-
+import { useEffect, useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
@@ -43,7 +45,12 @@ function App() {
             >
               
             </div>
-          </div>{filled < 99 ? (<p className="text-center mt-4 text-2xl font-semibold">Loading...</p>) : (<p className="text-center mt-4 text-2xl font-semibold">Complete!</p>)}
+          </div>
+          {filled < 99 ? ( 
+            <p className="text-center mt-4 text-2xl font-semibold">Loading...</p>
+          ) : (
+            <p className="text-center mt-4 text-2xl font-semibold">Complete!</p>
+          )}
         </div>
       </div>
     </>
